@@ -22,5 +22,9 @@ public class AuthController {
         return loginService.login(request);
     }
 
-
+    @PutMapping("/re-issue")
+    @ResponseStatus(HttpStatus.OK)
+    public TokenResponse reissueToken(@RequestHeader(name = "x-refresh-token") String token) {
+        return reissueService.execute(token);
+    }
 }
