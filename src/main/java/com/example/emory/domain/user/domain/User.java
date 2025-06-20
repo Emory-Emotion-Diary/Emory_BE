@@ -19,7 +19,7 @@ public class User {
     @Column(length = 20, nullable = false)
     private String accountId;
 
-    @Column(length = 20, nullable = false)
+    @Column(length = 200, nullable = false)
     private String password;
 
     @Embedded
