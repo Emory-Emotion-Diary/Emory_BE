@@ -45,7 +45,7 @@ public class LoginService {
 
         User newUser = new User(
                 xquareUser.getAccountId(),
-                passwordEncoder.encode(xquareUser.getPassword()),
+                xquareUser.getPassword(),
                 xquareUser.getName(),
                 xquareUser.getGrade(),
                 xquareUser.getClassNum(),
